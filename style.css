@@ -3,10 +3,6 @@
   margin: 0px;
   padding: 0px;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
 img {
   display: block;
   max-width: 100%;
@@ -21,6 +17,7 @@ img {
 /* Custom */
 body {
   background-color: var(--neutral-cor0);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,4 +76,21 @@ button {
 }
 .green-dark-bt {
   color: var(--primary-cor2);
+}
+/* Responsividade */
+@media (max-width: 376px) {
+  body {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .container {
+    min-height: 300px;
+  }
+  .yellow {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .green-dark {
+    border-radius: 0px 0px 10px 10px;
+  }
 }
